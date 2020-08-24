@@ -1,0 +1,55 @@
+﻿.liveVideo { background-color: #242424;text-shadow:none; margin-top:10px}
+.liveVideo .liveTit { height: 46px; border-bottom: 1px solid #303030; line-height: 46px; padding: 0 15px;}
+.liveVideo .liveTit h1 { font-size: 24px; color: #eaeaea; float: left; font-weight: 100;}
+.liveVideo .liveTit .sTime { float: right; color: #9c9b9b; font-size: 12px;}
+.videoCon { float: left; overflow: hidden; background-color: #000;width: 780px;height: 510px;}
+.videoCon .pPlayTit,.videoCon .pPlayNoTit { background: url(http://imgwx1.2345.com/dianyingimg/live/images/liveMap.v2.png?v=20160113) -95px 15px no-repeat; height: 38px; line-height: 38px; padding-left: 10px; color: #9c9b9b; margin-left: 15px; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; display: none;}
+.videoCon .pPlayNoTit { background: none;}
+.videoCon .videoIframe { border: 1px solid #000; border-top: 0 none; overflow: hidden;}
+.itemList { float: right; width:433px; border-left: 1px solid #303030; overflow: hidden;}
+.itemList .itemTit { height: 28px; margin: 0 10px; border-bottom: 1px dashed #333;}
+.itemList .itemTit .sMark { float: left; line-height: 28px; font-size: 16px; color: #999;}
+.itemList .itemTit .sSearch { float: right; border: 1px solid #1b1b1b; height: 26px; position: relative; z-index: 50;}
+.itemList .itemTit .sSearch .searchInput { border: 0 none; height: 22px; line-height: 22px; padding: 2px 8px; width: 150px; float: left; background-color: #363636; color: #999; font-family: \5b8b\4f53; font-size: 12px}
+.itemList .itemTit .sSearch .aSearchBtn { background: url(http://imgwx1.2345.com/dianyingimg/live/images/liveMap.v2.png?v=20160113) -71px -34px no-repeat; width: 29px; height: 26px; float: left; overflow: hidden; line-height: 999px; border-left: 1px solid #242424}
+.itemList .itemTit .sSearch .aSearchBtn:hover { background-position: -71px -61px;}
+.searchAssociation { position: absolute; top: 26px; width: 168px; left: -1px; display: none;}
+.searchAssociation li { line-height: 26px; height: 26px; float: left; overflow: hidden; width: 100%;}
+.searchAssociation li a,.searchAssociation li span { display: block; padding: 0 10px; color: #fff; border: 1px solid #1b1b1b;background-color: #363636; font-family: \5b8b\4f53;font-size: 14px; color: #fff;}
+.searchAssociation li a:hover { color: #fff;}
+.itemList .itemTit .sSearchFocus .searchAssociation { display: block;}
+.itemTab { height: 32px; padding: 9px 0 5px 6px; overflow: hidden;}
+.itemTab a { float: left; position: relative; height: 26px; padding: 0 7px; line-height: 26px; color: #fff; margin-left: 1px; display: inline;}
+.itemTab .iArrow { border-style:solid; border-width:6px; border-color:#1a7adb #242424 #242424 #242424; position: absolute; left: 50%; margin-left: -6px; top: 26px; display: none; overflow: hidden; height: 0; width: 0; line-height: 0;}
+.itemTab a:hover { color: #1a7adb;}
+.itemTab a.cur { background-color: #1a7adb; color: #fff;}
+.itemTab a.cur .iArrow { display: block;}
+.itemTab a.cur:hover { color: #fff; text-decoration: none;}
+.channelCon { height: 378px; overflow: hidden; position: relative; width: 100%; font-size:14px;}
+.channelList { position: absolute; opacity:0; top: 0; left: 0; width: 100%; z-index: 5;  overflow: hidden; background-color: #242424;}
+.channelList li { width: 100%; border-top: 1px solid #333; overflow: hidden; background-color: #242424; cursor: pointer; float: left; height: 53px;}
+.channelList li .sChannelName { float: left; height: 24px; line-height: 24px; color: #c8c6c6; cursor: pointer; width: 140px; overflow: hidden; padding-top: 12px;}
+.channelList li .sChannelName img { float: left; padding-right: 10px; padding-left: 12px;}
+.channelList li .pTxt {float: left;padding-left: 5px;line-height: 20px;font-family: \5b8b\4f53;cursor: pointer;overflow: hidden;width: 270px;padding-top: 8px;}
+.channelList li .pTxt span { width: 270px; line-height: 20px; overflow: hidden; white-space: nowrap; height: 20px; text-overflow:ellipsis; display: block; font-size: 12px; padding-left: 10px;}
+.channelList li .pTxt .sPlayName { color: #acacac}
+.channelList li .pTxt .sNextName { color: #5b5b5b}
+.channelList li .pTxt .sNameCenter { padding-top: 6px;}
+.channelList li.hover,.channelList li:hover,.channelList li.cur { background-color: #000}
+.channelList li.cur .sChannelName { color: #1a7adb}
+.channelList li.cur .pTxt .sPlayName { background: url(http://imgwx1.2345.com/dianyingimg/live/images/liveMap.v2.png?v=20160113) -95px 5px no-repeat; color: #1a7adb}
+.channelList li.cur .pTxt .sNextName { color: #5b5b5b}
+.transitionTop { -webkit-transition:top 0.5s;-moz-transition:top 0.5s; -o-transition:top 0.5s; transition:top 0.5s;}
+.channelListShow { opacity:1; z-index: 10;}
+.channelArrowCon { border-top: 1px solid #333333; height: 36px; overflow: hidden; text-align: center; padding-top: 4px; position: relative; padding-right: 75px;}
+.channelArrowCon .arrowBtn { border: 1px solid #1b1a1a; text-align: center; background-color: #343434;-webkit-radius: 1px; -moz-radius: 1px; -ms-radius: 1px; -o-radius: 1px; border-radius: 1px; width: 72px; height: 29px; display: inline-block; margin: 0 5px; color: #acacac; line-height: 28px;}
+.channelArrowCon i { background: url(http://imgwx1.2345.com/dianyingimg/live/images/liveMap.v2.png?v=20160113) 0 -65px no-repeat; width: 22px; height: 13px; display: block; margin: 7px auto 0; cursor: pointer; overflow: hidden;}
+.channelArrowCon i.iNextArrow { -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);}
+:root .channelArrowCon i.iNextArrow{ filter:none;}
+.channelArrowCon .arrowBtn:hover { text-decoration: underline; color: #1a7adb}
+.channelArrowCon .arrowBtn:hover i { background-position: 0 -95px}
+.channelArrowCon .unArrowBtn,.channelArrowCon .unArrowBtn:hover { color: #4a4a4a; text-decoration: none; background-color: #292929}
+.channelArrowCon .unArrowBtn i,.channelArrowCon .unArrowBtn:hover i { background-position: 0 -80px;}
+.channelArrowCon .unArrowBtn,.channelArrowCon .unArrowBtn i { cursor: default;}
+.channelArrowCon .aFeedbackBtn { position: absolute; line-height: 36px; height: 36px; top: 2px; right: 20px; color: #fff;}
+.channelArrowCon .aFeedbackBtn:hover { color: #2371c8}
