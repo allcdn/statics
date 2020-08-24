@@ -250,8 +250,8 @@ var stui = {
 				if($(".copylink").length){
 					$.ajax({ 
 						type : 'GET',  
-				    	url : '//dwz.wang/api/build?format=json&url='+encodeURIComponent(stui.browser.url),
-				        dataType : 'JSON',   
+				    	url : '//dwz.wang/api/build?format=jsonp&url='+encodeURIComponent(stui.browser.url),
+				        dataType : 'JSONP',   
 				        success : function(r) {
 				        	url_short = "全网vip高清影视院线大片等，免费在线观看："+r.short;	
 				        	var clipboard = new Clipboard('.copylink', {
