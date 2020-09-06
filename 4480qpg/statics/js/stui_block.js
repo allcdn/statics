@@ -253,7 +253,7 @@ var stui = {
 						url: 'https://dwz.wang/api/build',
 						dataType: 'JSONP',
 						data: {
-							format: 'json',
+							format: 'jsonp',
 							url: encodeURIComponent(stui.browser.url)
 						},
 						success: function (r) {
