@@ -251,9 +251,9 @@ var stui = {
 					$.ajax({
 						type: 'GET',
 						url: 'https://dwz.wang/api/build',
-						dataType: 'JSONP',
+						dataType: 'JSON',
 						data: {
-							format: 'jsonp',
+							format: 'json',
 							url: encodeURIComponent(stui.browser.url)
 						},
 						success: function (r) {
