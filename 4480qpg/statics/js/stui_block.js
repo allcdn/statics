@@ -254,7 +254,7 @@ var stui = {
 						dataType: 'JSON',
 						data: {
 							format: 'json',
-							dwzapi:'suoim',
+							dwzapi:'mrwso',
 							url: encodeURIComponent(stui.browser.url)
 						},  
 				        success : function(r) {
