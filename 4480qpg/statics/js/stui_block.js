@@ -250,12 +250,10 @@ var stui = {
 				if($(".copylink").length){
 					$.ajax({ 
 						type : 'GET',  
-				    	url: 'https://api.uomg.com/api/long2dwz',
+				    	url: 'https://www.gourls.net/dwz.php',
 						dataType: 'JSON',
 						data: {
-							format: 'json',
-							dwzapi:'mrwso',
-							url: encodeURIComponent(stui.browser.url)
+							longurl: encodeURIComponent(stui.browser.url)
 						},  
 				        success : function(r) {
 				        	url_short = "全网vip高清影视院线大片等，免费在线观看："+r.ae_url;	
