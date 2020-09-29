@@ -249,11 +249,11 @@ var stui = {
 			if(copyshort==1){
 				if($(".copylink").length){
 					$.ajax({ 
-						type : 'GET',  
+						type : 'post',  
 				    	url: 'https://www.gourls.net/dwz.php',
 						dataType: 'JSON',
 						data: {
-							longurl: encodeURIComponent(stui.browser.url)
+							longurl:stui.browser.url
 						},  
 				        success : function(r) {
 				        	url_short = "全网vip高清影视院线大片等，免费在线观看："+r.ae_url;	
