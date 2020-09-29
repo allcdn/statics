@@ -250,14 +250,15 @@ var stui = {
 				if ($(".copylink").length) {
 					$.ajax({
 						type: 'GET',
-						url: 'https://dwz.wang/api/build',
+						url: 'https://api.uomg.com/api/long2dwz',
 						dataType: 'JSON',
 						data: {
 							format: 'json',
+							dwzapi:'suoim',
 							url: encodeURIComponent(stui.browser.url)
 						},
 						success: function (r) {
-							url_short = "全网vip高清影视院线大片等，免费在线观看：" + r.short;
+							url_short = "全网vip高清影视院线大片等，免费在线观看：" + r.ae_url;
 							var clipboard = new Clipboard('.copylink', {
 								text: function () {
 									return url_short;
